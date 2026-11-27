@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Star Chess — Support</title>
+  <meta name="description" content="Support page for Star Chess — a chess app for iPhone, iPad, and Mac with beautiful 3D and classic 2D boards, voice input, AI opponent, image import, save, and replay." />
+  <meta name="theme-color" content="#0b0f17" />
+  <meta property="og:title" content="Star Chess — Support" />
+  <meta property="og:description" content="Play chess in beautiful 3D or classic 2D. Voice control, AI opponent, import from images, save and replay games." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://johnxu2013.github.io/star-chess-docs/" />
+  <style>
+    :root {
+      --bg: #0b0f17;
+      --bg2: #0f1623;
+      --fg: #e8eef7;
+      --muted: #a8b3c5;
+      --accent: #6aa5ff;
+      --accent2: #8c6cff;
+      --ok: #31c48d;
+      --danger: #ef4444;
+      --card: #121a27cc;
+      --border: #223048;
+      --maxw: 980px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: radial-gradient(1200px 800px at 80% -10%, #1b2640 0%, var(--bg) 60%) fixed,
+                  linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%) fixed;
+      color: var(--fg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header {
+      padding: 48px 20px 24px;
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(180deg, #0b1322 0%, rgba(11, 19, 34, 0) 100%);
+    }
+    .wrap { max-width: var(--maxw); margin: 0 auto; }
+    .hero {
+      display: grid; grid-template-columns: 1fr; gap: 16px; align-items: center;
+    }
+    .title { font-size: clamp(28px, 4vw, 40px); font-weight: 800; letter-spacing: -0.02em; }
+    .tagline { color: var(--muted); font-size: clamp(16px, 2.2vw, 18px); }
+    .badges { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px; }
+    .badge {
+      display: inline-flex; align-items: center; gap: 8px; padding: 10px 14px;
+      background: linear-gradient(135deg, #162033, #0f1726); border: 1px solid var(--border);
+      color: var(--fg); border-radius: 12px; text-decoration: none; font-weight: 600;
+    }
+    .badge:hover { border-color: #2d3d5f; }
+    .badge small { color: var(--muted); font-weight: 500; }
+
+    main { padding: 24px 20px 80px; }
+    section { padding: 28px 0; border-bottom: 1px solid var(--border); }
+    h2 { font-size: 24px; margin: 0 0 12px; }
+    p { margin: 0 0 12px; }
+
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+    .card {
+      background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+      padding: 16px; backdrop-filter: saturate(1.2) blur(6px);
+    }
+    .card h3 { margin: 0 0 6px; font-size: 18px; }
+    .card p { color: var(--muted); font-size: 15px; margin: 0; }
+
+    ul.inline { padding-left: 18px; margin: 8px 0; color: var(--muted); }
+
+    .cta {
+      display: inline-block; margin-top: 8px; padding: 12px 16px; font-weight: 700;
+      color: #fff; background: linear-gradient(135deg, var(--accent), var(--accent2));
+      border-radius: 12px; border: none; text-decoration: none;
+    }
+    .cta:hover { filter: brightness(1.05); }
+
+    .muted { color: var(--muted); }
+    .kbd {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.95em; padding: 2px 6px; border-radius: 6px; border: 1px solid var(--border);
+      background: #111827; color: #e5e7eb;
+    }
+
+    footer { padding: 20px; color: var(--muted); text-align: center; }
+    nav { margin-top: 10px; display: flex; gap: 16px; flex-wrap: wrap; }
+    nav a { color: var(--muted); }
+
+    @media (prefers-color-scheme: light) {
+      :root { --fg: #0c1220; --muted: #4f5b6e; --bg: #f6f8fb; --bg2: #f1f4f9; --card: #ffffffcf; --border: #e5e9f2; }
+      body { background: linear-gradient(180deg, var(--bg), var(--bg2)); }
+      header { background: linear-gradient(180deg, #ffffff, rgba(255,255,255,0)); }
+      .badge { background: #fff; }
+      .kbd { background: #f3f4f6; color: #111827; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap hero">
+      <div>
+        <div class="title">Star Chess</div>
+        <p class="tagline">Play chess in beautiful 3D or classic 2D. Voice control, AI opponent, import from images, save and replay games — on iPhone, iPad, and Mac.</p>
+        <div class="badges">
+          <a class="badge" href="https://apps.apple.com/us/iphone/search?term=John%20Xu" rel="noopener" target="_blank" aria-label="Find on the iOS App Store">
+            <span> App Store</span><small>iPhone & iPad</small>
+          </a>
+          <a class="badge" href="https://apps.apple.com/us/mac/search?term=John%20Xu" rel="noopener" target="_blank" aria-label="Find on the Mac App Store">
+            <span> App Store</span><small>Mac</small>
+          </a>
+          <a class="badge" href="#support" aria-label="Contact support"><span>✉︎</span><small>Contact Support</small></a>
+        </div>
+        <nav>
+          <a href="#features">Features</a>
+          <a href="#get-started">Get started</a>
+          <a href="#faq">FAQ</a>
+          <a href="#support">Support</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="features">
+      <h2>What you can do</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Immersive 3D or classic 2D</h3>
+          <p>Choose a realistic 3D chessboard with zoom, tilt, and orbit controls, or a clean 2D board for traditional play.</p>
+        </div>
+        <div class="card">
+          <h3>Hands‑free voice moves</h3>
+          <p>Tap <span class="kbd">Voice</span> and say moves like “e2 to e4,” “castle king side,” or “cancel.” Built‑in fuzzy matching helps resolve what you meant.</p>
+        </div>
+        <div class="card">
+          <h3>Play vs AI or a friend</h3>
+          <p>Face a range of AI strengths with time limits, or play person‑vs‑person on the same device.</p>
+        </div>
+        <div class="card">
+          <h3>Import from a screenshot</h3>
+          <p>Load a 2D chessboard image, crop to the board, calibrate once, and correct any square — then continue the game from that position.</p>
+        </div>
+        <div class="card">
+          <h3>Save, resume, and replay</h3>
+          <p>Save games to continue later. Premium unlocks automatic <em>replay</em> with play/pause, step, and speed controls to review and improve.</p>
+        </div>
+        <div class="card">
+          <h3>Privacy‑minded</h3>
+          <p>Board recognition and voice processing run on‑device. Network access is used only for App Store purchases.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="get-started">
+      <h2>Quick start</h2>
+      <ol class="muted">
+        <li>From the main menu, choose <strong>New Person vs Person</strong> or <strong>New vs AI</strong> (select a difficulty).</li>
+        <li>Use the on‑screen controls to <strong>undo</strong>, <strong>save</strong>, or <strong>toggle voice</strong>.</li>
+        <li>To import a position, open <strong>Menu → Load from Image…</strong>, crop to the board, calibrate once from a starting position, fix any squares, then load.</li>
+        <li>Open <strong>Settings</strong> to switch between <strong>3D</strong> and <strong>2D</strong>, and to enable <strong>voice speak‑back</strong>.</li>
+      </ol>
+      <p class="muted">Tip: In voice mode, say <span class="kbd">cancel</span> to clear your selection.</p>
+      <p><a class="cta" href="#faq">Read the FAQ</a></p>
+    </section>
+
+    <section id="faq">
+      <h2>FAQ</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>How do I restore purchases?</h3>
+          <p>On the subscription screen, tap <strong>Restore Purchase</strong>. Consumables (one‑time usage credits) aren’t restorable by design, per App Store policy.</p>
+        </div>
+        <div class="card">
+          <h3>What OS versions are supported?</h3>
+          <p>Requires iOS 17 or later, iPadOS 17 or later, and macOS 14 or later.</p>
+        </div>
+        <div class="card">
+          <h3>Does the app send my images or voice to a server?</h3>
+          <p>No. Image recognition and voice parsing run locally on your device. The app only connects to Apple for App Store purchases.</p>
+        </div>
+        <div class="card">
+          <h3>How does voice input work?</h3>
+          <p>Tap <span class="kbd">Voice</span> to start listening. Speak a square then its destination (e.g., “e2 … e4”), or say the full move in one phrase. Say “castle king side,” “castle queen side,” or “cancel.”</p>
+        </div>
+        <div class="card">
+          <h3>Replay needs Premium?</h3>
+          <p>Replay is part of Premium and includes a free trial. You can still save and resume games without Premium.</p>
+        </div>
+        <div class="card">
+          <h3>Where can I read the privacy policy and terms?</h3>
+          <p>
+            <a href="privacy.html">Privacy Policy</a> ·
+            <a href="terms.html">Terms of Use</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="support">
+      <h2>Support & contact</h2>
+      <p>If you need help, found a bug, or have a feature request, we’d love to hear from you.</p>
+      <ul class="inline">
+        <li>Email us: <a href="mailto:support@yourdomain.com?subject=Star%20Chess%20Support&body=Please%20describe%20the%20issue%20you%20found.%0A%0AHelpful%20details:%0A%E2%80%A2%20Device%20model:%0A%E2%80%A2%20iOS/iPadOS/macOS%20version:%0A%E2%80%A2%20App%20version:%0A%E2%80%A2%20Steps%20to%20reproduce:%0A">support@yourdomain.com</a> (replace with your support email)</li>
+        <li>Privacy Policy: <a href="privacy.html">privacy.html</a></li>
+        <li>Terms of Use: <a href="terms.html">terms.html</a></li>
+      </ul>
+      <p class="muted">When writing in, please include your device model, OS version, and a brief description of the steps to reproduce the issue.</p>
+    </section>
+
+    <section id="legal">
+      <h2>Legal</h2>
+      <p class="muted">© <span id="year"></span> Star Chess. All rights reserved. Apple, iPhone, iPad, and Mac are trademarks of Apple Inc. This app isn’t affiliated with any chess organizations.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div>Built with privacy in mind. Last updated: November 2026.</div>
+      <div style="margin-top:8px"><a href="#top">Back to top ↑</a></div>
+    </div>
+  </footer>
+
+  <script>
+    // Set current year in footer
+    (function(){
+      var y = new Date().getFullYear();
+      var el = document.getElementById('year');
+      if (el) el.textContent = y;
+    })();
+  </script>
+  <!--
+    Notes for the developer:
+    • Replace the App Store links with your app’s direct URLs when available.
+    • Update the support email above (search for support@yourdomain.com).
+    • If hosting on GitHub Pages at johnxu2013.github.io/star-chess-docs,
+      place this file at the repository root alongside privacy.html and terms.html.
+  -->
+</body>
+</html>
